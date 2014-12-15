@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :posts
+
+ root :to => 'members#index' 
   resources :members
 
   resources :test_models
